@@ -1,109 +1,76 @@
 <div align="center">
 
-# Shubham Saini
+<!-- 01. HERO BANNER -->
+<img src="./assets/hero.svg?v=1" alt="Shubham Saini - Hero Banner" width="100%" />
 
-Portfolio : https://corder-s.github.io/
+<br/>
 
-### Building full-stack experiences, one thoughtful commit at a time.
+<!-- 02. ABOUT & FOCUS -->
+<img src="./assets/about-life.svg?v=1" alt="About Shubham Saini & Engineering Focus" width="100%" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=850&color=38BDF8&center=true&vCenter=true&width=620&lines=B.Tech+CSE+Student;Aspiring+Full-Stack+Developer;Java+%7C+React+%7C+Node.js+%7C+Python;Turning+ideas+into+useful+software." alt="Animated introduction" />
-</a>
+<br/>
 
-<br />
+<!-- 03. TOOLKIT & ARCHITECTURAL ORBITS -->
+<img src="./assets/stack.svg?v=1" alt="Developer Toolkit & Technologies" width="100%" />
 
-<a href="https://github.com/Corder-s"><img src="https://img.shields.io/badge/GitHub-Corder--s-111827?style=for-the-badge&logo=github" alt="GitHub" /></a>
-<a href="https://www.linkedin.com/in/shubham-saini-33537a374/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://www.instagram.com/damn.itz_shubham/"><img src="https://img.shields.io/badge/Instagram-%40damn.itz__shubham-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-<a href="https://wa.me/918958364005"><img src="https://img.shields.io/badge/WhatsApp-Chat%20with%20me-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
-<a href="mailto:damnitshuham1406@gmail.com"><img src="https://img.shields.io/badge/Email-Write%20to%20me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<img src="https://komarev.com/ghpvc/?username=Corder-s&label=PROFILE+VIEWS&color=0ea5e9&style=for-the-badge" alt="Profile views" />
+<br/>
 
-</div>
+<!-- 04. ID & REPO DASHBOARD -->
+<img src="./assets/id-dashboard.svg?v=1" alt="Developer ID Dashboard & Verified Metrics" width="100%" />
 
-<br />
+<br/>
 
-## `> whoami`
+<!-- 05. CONNECT SECTION -->
+<img src="./assets/connect.svg?v=1" alt="Let's Connect" width="100%" />
 
-```yaml
-name: Shubham Saini
-location: Greater Noida, India
-education: B.Tech in Computer Science & Engineering (2025-2029)
-currently:
-  - sharpening full-stack engineering skills
-  - exploring software architecture and scalable systems
-interests: [web development, data structures, clean APIs, hackathons]
-```
+<br/>
 
-I am a second-year CSE student who enjoys turning an idea into a complete product: a clear interface, reliable backend, and data model that makes sense. I learn best by building practical software and making each version a little better than the last.
-
-## `> toolkit.load()`
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,python,c,js,html,css,react,nodejs,express,mongodb,mysql,sqlite,git,github,postman,figma&perline=8" alt="Technology skills" />
+### 🌐 Connect With Me
+<!-- Direct interactive markdown buttons (GitHub Camo disables SVG clicks) -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/shubham-saini-33537a374/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Corder-s" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="mailto:damnitshuham1406@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://wa.me/918958364005" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+  &nbsp;
+  <a href="https://www.instagram.com/damn.itz_shubham/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  &nbsp;
+  <a href="https://corder-s.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio%20Site-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=062034" alt="Portfolio Site" />
+  </a>
 </p>
 
-## `> selected_projects`
+<br/>
 
-| Project | Impact | Stack |
-| :-- | :-- | :-- |
-| **Snapgram** | An Instagram-inspired social platform with authentication, profiles, posts, follows, and a personalized feed. | React · Node.js · Express · MongoDB |
-| **Power-of-Two Max Heap** | A configurable Java max-heap with `2^x` children per parent and efficient insert / pop-max operations. | Java · Data Structures |
-| **Shipping Data Pipeline** | Combines shipping datasets, calculates product quantities, and creates a queryable SQLite database. | Python · SQLite · CSV |
+### 🚀 Selected Projects
 
-> **Now building:** stronger end-to-end applications with thoughtful UI, REST APIs, and dependable data layers.
+| Project | Description | Tech Stack | Status / Links |
+| :--- | :--- | :--- | :---: |
+| **Snapgram** | Instagram-inspired social platform with authentication, profiles, posts, follows, and personalized feeds. | `React` `Node.js` `Express` `MongoDB` | [View Project ↗](https://github.com/Corder-s) |
+| **Power-of-Two Max Heap** | Configurable Java max-heap data structure where every parent supports 2<sup>x</sup> children with efficient core operations. | `Java` `DSA` `Algorithms` | [View Project ↗](https://github.com/Corder-s) |
+| **Shipping Data Pipeline** | Python workflow combining shipment data, calculating quantities, and writing a queryable SQLite database. | `Python` `SQLite` `CSV` | [View Project ↗](https://github.com/Corder-s) |
 
-## `> github.pulse()`
+<br/>
 
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Corder-s&show_icons=true&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9&ring_color=38bdf8" alt="Shubham's GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Corder-s&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9" alt="Most used languages" />
-</div>
+```
+📍 Greater Noida, India · 🎓 B.Tech Computer Science (2nd Year) · ⚡ Open to Internships & Collaborations
+```
 
-<br />
+<br/>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Corder-s&hide_border=true&background=0D1117&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=C9D1D9&dates=8B949E&stroke=30363D" alt="GitHub contribution streak" />
-</div>
-
-## `> activity.map()`
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Corder-s&bg_color=0d1117&color=c9d1d9&line=38bdf8&point=ffffff&area=true&hide_border=true" alt="Shubham's recent GitHub activity graph" />
-</div>
-
-## `> beyond_the_code`
-
-- 🏆 Earned an ₹2,000 academic award for an **8.09 CGPA** in the first semester.
-- 🧩 Completed Walmart Global Tech's Advanced Software Engineering simulation via Forage.
-- ⚡ I enjoy coding challenges, hackathons, and learning by shipping.
-
-<div align="center">
-
-### “Make it clear. Make it useful. Leave room for delight.”
-
-<sub>Open to learning, collaborating, and building things that matter.</sub>
-
-<br /><br />
-
-> **“Stay curious, keep showing up, and trust that every small step is building something bigger.”**
-
-</div>
-
-<br />
-
-<div align="center">
-
-## `> session.close()`
-
-<img src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="420" alt="Animated developer typing at a computer" />
-
-### Thanks for visiting! 👋
-
-<sub>Feel free to explore my work, connect on LinkedIn, or reach out to collaborate.</sub>
-
-<br /><br />
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:1e3a8a&height=110&section=footer" width="100%" alt="Blue wave footer" />
+<sub>Crafted with the <b>GitHub Reimagined: Profile Playbook</b> architecture. Pure vector animation • Zero external dependencies.</sub>
 
 </div>

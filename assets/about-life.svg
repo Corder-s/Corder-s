@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="860" height="340">
+  <defs>
+    <linearGradient id="abt_bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#0e1b2f"/>
+    </linearGradient>
+
+    <linearGradient id="abt_border_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7c6cff" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="abt_prog_fill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#7c6cff"/>
+    </linearGradient>
+
+    <pattern id="abt_dot_grid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#213451" opacity="0.5"/>
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap');
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      .font-display { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+
+      .slide-panel {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      @keyframes abtSlide1 {
+        0%, 28%    { opacity: 1; visibility: visible; transform: translateX(0); }
+        32%, 96%   { opacity: 0; visibility: hidden; transform: translateX(12px); }
+        100%       { opacity: 1; visibility: visible; transform: translateX(0); }
+      }
+      @keyframes abtSlide2 {
+        0%, 29%    { opacity: 0; visibility: hidden; transform: translateX(12px); }
+        33.3%, 61% { opacity: 1; visibility: visible; transform: translateX(0); }
+        65%, 100%  { opacity: 0; visibility: hidden; transform: translateX(12px); }
+      }
+      @keyframes abtSlide3 {
+        0%, 62%    { opacity: 0; visibility: hidden; transform: translateX(12px); }
+        66.6%, 95% { opacity: 1; visibility: visible; transform: translateX(0); }
+        98%, 100%  { opacity: 0; visibility: hidden; transform: translateX(12px); }
+      }
+
+      .slide-1 { animation: abtSlide1 12s infinite; }
+      .slide-2 { animation: abtSlide2 12s infinite; }
+      .slide-3 { animation: abtSlide3 12s infinite; }
+
+      /* Segment Progress Bars */
+      @keyframes abtBarFill1 {
+        0%         { width: 0px; }
+        28%        { width: 110px; }
+        33.3%, 100%{ width: 0px; }
+      }
+      @keyframes abtBarFill2 {
+        0%, 33.3%  { width: 0px; }
+        61%        { width: 110px; }
+        66.6%, 100%{ width: 0px; }
+      }
+      @keyframes abtBarFill3 {
+        0%, 66.6%  { width: 0px; }
+        94%        { width: 110px; }
+        100%       { width: 0px; }
+      }
+
+      .prog-bar-1 { animation: abtBarFill1 12s infinite; }
+      .prog-bar-2 { animation: abtBarFill2 12s infinite; }
+      .prog-bar-3 { animation: abtBarFill3 12s infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .slide-1 { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+        .slide-2, .slide-3 { display: none !important; }
+        .prog-bar-1 { width: 110px !important; animation: none !important; }
+        .prog-bar-2, .prog-bar-3 { width: 0px !important; animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="856" height="336" rx="20" fill="url(#abt_bg_grad)"/>
+  <rect x="2" y="2" width="856" height="336" rx="20" fill="url(#abt_dot_grid)"/>
+  <rect x="2" y="2" width="856" height="336" rx="20" fill="none" stroke="url(#abt_border_grad)" stroke-width="1.5"/>
+
+  <!-- LEFT PANEL: Core Capabilities from Portfolio (x=45, y=35) -->
+  <g transform="translate(45, 35)">
+    <text x="0" y="20" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">
+      // 01 ABOUT &amp; FOCUS
+    </text>
+    <text x="0" y="52" fill="#e8f0fb" class="font-display" font-size="24" font-weight="800">
+      Always Learning. Always Building.
+    </text>
+
+    <!-- Capability Item 1: Full-Stack Web App -->
+    <g transform="translate(0, 75)">
+      <rect x="0" y="0" width="345" height="52" rx="10" fill="#101d31" stroke="#213451" stroke-width="1"/>
+      <circle cx="24" cy="26" r="12" fill="#08111f" stroke="#38bdf8" stroke-width="1"/>
+      <text x="24" y="30" text-anchor="middle" fill="#38bdf8" class="font-mono" font-size="12">🌐</text>
+      <text x="48" y="23" fill="#e8f0fb" class="font-display" font-size="13" font-weight="700">Full-Stack Web Engineering</text>
+      <text x="48" y="39" fill="#9fb0c8" class="font-display" font-size="11.5">React, Node.js, Express, MongoDB applications</text>
+    </g>
+
+    <!-- Capability Item 2: DSA & Algorithms -->
+    <g transform="translate(0, 137)">
+      <rect x="0" y="0" width="345" height="52" rx="10" fill="#101d31" stroke="#213451" stroke-width="1"/>
+      <circle cx="24" cy="26" r="12" fill="#08111f" stroke="#7c6cff" stroke-width="1"/>
+      <text x="24" y="30" text-anchor="middle" fill="#7c6cff" class="font-mono" font-size="12">⚙️</text>
+      <text x="48" y="23" fill="#e8f0fb" class="font-display" font-size="13" font-weight="700">Data Structures &amp; Java</text>
+      <text x="48" y="39" fill="#9fb0c8" class="font-display" font-size="11.5">Custom max-heaps, core CS theory &amp; problem solving</text>
+    </g>
+
+    <!-- Capability Item 3: Data Processing -->
+    <g transform="translate(0, 199)">
+      <rect x="0" y="0" width="345" height="52" rx="10" fill="#101d31" stroke="#213451" stroke-width="1"/>
+      <circle cx="24" cy="26" r="12" fill="#08111f" stroke="#ff354f" stroke-width="1"/>
+      <text x="24" y="30" text-anchor="middle" fill="#ff354f" class="font-mono" font-size="12">📊</text>
+      <text x="48" y="23" fill="#e8f0fb" class="font-display" font-size="13" font-weight="700">Python Data Pipelines &amp; SQL</text>
+      <text x="48" y="39" fill="#9fb0c8" class="font-display" font-size="11.5">Automated data processing, SQLite &amp; MySQL workflows</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="428" y1="40" x2="428" y2="300" stroke="#213451" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT PANEL: 3-Slide Carousel from Live Site (x=460, y=35) -->
+  <g transform="translate(460, 35)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="18" fill="#7c6cff" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">
+        // 02 PROFILE HIGHLIGHTS
+      </text>
+
+      <!-- Segment Progress Bars -->
+      <g transform="translate(0, 32)">
+        <rect x="0" y="0" width="110" height="4" rx="2" fill="#213451"/>
+        <rect x="0" y="0" width="0" height="4" rx="2" fill="url(#abt_prog_fill)" class="prog-bar-1"/>
+
+        <rect x="122" y="0" width="110" height="4" rx="2" fill="#213451"/>
+        <rect x="122" y="0" width="0" height="4" rx="2" fill="url(#abt_prog_fill)" class="prog-bar-2"/>
+
+        <rect x="244" y="0" width="110" height="4" rx="2" fill="#213451"/>
+        <rect x="244" y="0" width="0" height="4" rx="2" fill="url(#abt_prog_fill)" class="prog-bar-3"/>
+      </g>
+    </g>
+
+    <!-- Slide Container Box -->
+    <g transform="translate(0, 56)">
+      <rect x="0" y="0" width="355" height="205" rx="14" fill="#101d31" stroke="#213451" stroke-width="1"/>
+
+      <!-- SLIDE 1: Education -->
+      <g transform="translate(24, 26)">
+        <g class="slide-panel slide-1">
+          <text x="0" y="0" fill="#38bdf8" class="font-mono" font-size="11" font-weight="600">SLIDE 01 / 03 · BACKGROUND</text>
+          <text x="0" y="28" fill="#e8f0fb" class="font-display" font-size="18" font-weight="800">
+            Computer Science &amp; Eng.
+          </text>
+          <text x="0" y="56" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            2nd-year B.Tech student in Greater Noida, India.
+          </text>
+          <text x="0" y="76" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            Enjoying the full journey from UI design to backend logic.
+          </text>
+
+          <g transform="translate(0, 104)">
+            <rect x="0" y="0" width="95" height="24" rx="6" fill="#08111f" stroke="#38bdf8" stroke-width="1"/>
+            <text x="47.5" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">B.TECH CSE</text>
+
+            <rect x="105" y="0" width="115" height="24" rx="6" fill="#08111f" stroke="#38bdf8" stroke-width="1"/>
+            <text x="162.5" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">GREATER NOIDA</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- SLIDE 2: Current Learning -->
+      <g transform="translate(24, 26)">
+        <g class="slide-panel slide-2">
+          <text x="0" y="0" fill="#7c6cff" class="font-mono" font-size="11" font-weight="600">SLIDE 02 / 03 · CURRENT GOALS</text>
+          <text x="0" y="28" fill="#e8f0fb" class="font-display" font-size="18" font-weight="800">
+            Strengthening Full-Stack
+          </text>
+          <text x="0" y="56" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            Deepening software architecture, clean REST design,
+          </text>
+          <text x="0" y="76" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            and scalable data structures through continuous shipping.
+          </text>
+
+          <g transform="translate(0, 104)">
+            <rect x="0" y="0" width="105" height="24" rx="6" fill="#08111f" stroke="#7c6cff" stroke-width="1"/>
+            <text x="52.5" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">SYSTEM DESIGN</text>
+
+            <rect x="115" y="0" width="95" height="24" rx="6" fill="#08111f" stroke="#7c6cff" stroke-width="1"/>
+            <text x="162.5" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">REST APIS</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- SLIDE 3: Collaboration & Openness -->
+      <g transform="translate(24, 26)">
+        <g class="slide-panel slide-3">
+          <text x="0" y="0" fill="#10b981" class="font-mono" font-size="11" font-weight="600">SLIDE 03 / 03 · OPPORTUNITIES</text>
+          <text x="0" y="28" fill="#e8f0fb" class="font-display" font-size="18" font-weight="800">
+            Open for Internships
+          </text>
+          <text x="0" y="56" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            Eager to collaborate, contribute to high-impact projects,
+          </text>
+          <text x="0" y="76" fill="#9fb0c8" class="font-display" font-size="13" font-weight="400">
+            and build practical software with curious engineering teams.
+          </text>
+
+          <g transform="translate(0, 104)">
+            <rect x="0" y="0" width="100" height="24" rx="6" fill="#08111f" stroke="#10b981" stroke-width="1"/>
+            <text x="50" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">INTERNSHIPS</text>
+
+            <rect x="110" y="0" width="110" height="24" rx="6" fill="#08111f" stroke="#10b981" stroke-width="1"/>
+            <text x="165" y="16" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="10">TEAM PROJECTS</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

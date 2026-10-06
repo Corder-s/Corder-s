@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420">
+  <defs>
+    <linearGradient id="stk_bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#0e1a2d"/>
+    </linearGradient>
+
+    <linearGradient id="stk_border_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7c6cff" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <pattern id="stk_dot_grid" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#213451" opacity="0.5"/>
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      .font-display { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+
+      @keyframes stkFloatA {
+        0%, 100% { transform: translate(0px, 0px); }
+        50%      { transform: translate(0px, -6px); }
+      }
+      @keyframes stkFloatB {
+        0%, 100% { transform: translate(0px, 0px); }
+        50%      { transform: translate(4px, 4px); }
+      }
+      @keyframes stkFloatC {
+        0%, 100% { transform: translate(0px, 0px); }
+        50%      { transform: translate(-4px, 3px); }
+      }
+
+      .node-float-a { animation: stkFloatA 4.5s ease-in-out infinite; }
+      .node-float-b { animation: stkFloatB 5.5s ease-in-out infinite; }
+      .node-float-c { animation: stkFloatC 6.2s ease-in-out infinite; }
+
+      /* Orbit Dash Pulsing */
+      @keyframes stkOrbitDash {
+        from { stroke-dashoffset: 0; }
+        to   { stroke-dashoffset: 60; }
+      }
+      .orbit-path-1 { animation: stkOrbitDash 12s linear infinite; }
+      .orbit-path-2 { animation: stkOrbitDash 16s linear infinite reverse; }
+      .orbit-path-3 { animation: stkOrbitDash 22s linear infinite; }
+
+      /* Core Pulsing Glow */
+      @keyframes stkCorePulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50%      { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 14px #38bdf8); }
+      }
+      .orbit-core { animation: stkCorePulse 4s ease-in-out infinite; transform-origin: 210px 175px; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .node-float-a, .node-float-b, .node-float-c, .orbit-path-1, .orbit-path-2, .orbit-path-3, .orbit-core {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="856" height="416" rx="20" fill="url(#stk_bg_grad)"/>
+  <rect x="2" y="2" width="856" height="416" rx="20" fill="url(#stk_dot_grid)"/>
+  <rect x="2" y="2" width="856" height="416" rx="20" fill="none" stroke="url(#stk_border_grad)" stroke-width="1.5"/>
+
+  <!-- Header Text -->
+  <g transform="translate(45, 35)">
+    <text x="0" y="0" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">
+      // 03 TOOLKIT &amp; TECHNOLOGIES
+    </text>
+    <text x="0" y="26" fill="#e8f0fb" class="font-display" font-size="22" font-weight="800">
+      Multi-Tiered Architectural Orbits
+    </text>
+  </g>
+
+  <!-- LEFT: 3 TILTED ELLIPTICAL ORBITS (Center at 210, 225) -->
+  <g transform="translate(0, 50)">
+    <!-- Orbit 1 (Core Inner: Java, Python) -->
+    <ellipse cx="210" cy="175" rx="85" ry="42" transform="rotate(-15 210 175)" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-dasharray="6 4" class="orbit-path-1" opacity="0.75"/>
+
+    <!-- Orbit 2 (Middle: React, Node.js, Express) -->
+    <ellipse cx="210" cy="175" rx="140" ry="70" transform="rotate(-15 210 175)" fill="none" stroke="#7c6cff" stroke-width="1.3" stroke-dasharray="8 5" class="orbit-path-2" opacity="0.65"/>
+
+    <!-- Orbit 3 (Outer: MongoDB, MySQL, SQLite, Git) -->
+    <ellipse cx="210" cy="175" rx="195" ry="96" transform="rotate(-15 210 175)" fill="none" stroke="#22c55e" stroke-width="1.3" stroke-dasharray="7 6" class="orbit-path-3" opacity="0.55"/>
+
+    <!-- Glowing Center Core -->
+    <g class="orbit-core">
+      <circle cx="210" cy="175" r="22" fill="#101d31" stroke="#38bdf8" stroke-width="2"/>
+      <circle cx="210" cy="175" r="14" fill="#38bdf8" opacity="0.3"/>
+      <text x="210" y="179" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11" font-weight="700">&lt;/&gt;</text>
+    </g>
+
+    <!-- Orbit 1 Nodes (Languages: Java, Python) -->
+    <g transform="translate(135, 160)">
+      <g class="node-float-a">
+        <circle cx="0" cy="0" r="14" fill="#101d31" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#38bdf8" class="font-mono" font-size="9" font-weight="700">JAVA</text>
+      </g>
+    </g>
+    <g transform="translate(285, 190)">
+      <g class="node-float-b">
+        <circle cx="0" cy="0" r="14" fill="#101d31" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#facc15" class="font-mono" font-size="9" font-weight="700">PYTHON</text>
+      </g>
+    </g>
+
+    <!-- Orbit 2 Nodes (Frameworks: React, Node, Express) -->
+    <g transform="translate(90, 205)">
+      <g class="node-float-c">
+        <circle cx="0" cy="0" r="14" fill="#101d31" stroke="#7c6cff" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#38bdf8" class="font-mono" font-size="8.5" font-weight="700">REACT</text>
+      </g>
+    </g>
+    <g transform="translate(325, 140)">
+      <g class="node-float-a">
+        <circle cx="0" cy="0" r="14" fill="#101d31" stroke="#7c6cff" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#22c55e" class="font-mono" font-size="8.5" font-weight="700">NODE</text>
+      </g>
+    </g>
+    <g transform="translate(205, 240)">
+      <g class="node-float-b">
+        <circle cx="0" cy="0" r="14" fill="#101d31" stroke="#7c6cff" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#cbd5e1" class="font-mono" font-size="8.5" font-weight="700">EXPRESS</text>
+      </g>
+    </g>
+
+    <!-- Orbit 3 Nodes (Databases & Tools: Mongo, SQLite, MySQL) -->
+    <g transform="translate(35, 145)">
+      <g class="node-float-b">
+        <circle cx="0" cy="0" r="15" fill="#101d31" stroke="#22c55e" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#22c55e" class="font-mono" font-size="8" font-weight="700">MONGO</text>
+      </g>
+    </g>
+    <g transform="translate(385, 200)">
+      <g class="node-float-c">
+        <circle cx="0" cy="0" r="15" fill="#101d31" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#38bdf8" class="font-mono" font-size="8" font-weight="700">SQLITE</text>
+      </g>
+    </g>
+    <g transform="translate(225, 78)">
+      <g class="node-float-a">
+        <circle cx="0" cy="0" r="15" fill="#101d31" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="0" y="4" text-anchor="middle" fill="#f59e0b" class="font-mono" font-size="8" font-weight="700">MYSQL</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT: GROUPED TECH STACK CHIPS GRID (x=460, y=85) -->
+  <g transform="translate(460, 85)">
+    <!-- Category 1: Languages -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="14" fill="#38bdf8" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1">
+        ● PROGRAMMING LANGUAGES
+      </text>
+      <g transform="translate(0, 24)">
+        <rect x="0" y="0" width="60" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="30" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Java</text>
+
+        <rect x="68" y="0" width="70" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="103" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Python</text>
+
+        <rect x="146" y="0" width="88" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="190" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">JavaScript</text>
+
+        <rect x="242" y="0" width="45" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="264.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">C</text>
+      </g>
+    </g>
+
+    <!-- Category 2: Full-Stack Web -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="14" fill="#7c6cff" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1">
+        ● WEB FRAMEWORKS &amp; RUNTIME
+      </text>
+      <g transform="translate(0, 24)">
+        <rect x="0" y="0" width="65" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="32.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">React</text>
+
+        <rect x="73" y="0" width="75" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="110.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Node.js</text>
+
+        <rect x="156" y="0" width="75" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="193.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Express</text>
+
+        <rect x="239" y="0" width="85" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="281.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">HTML/CSS</text>
+      </g>
+    </g>
+
+    <!-- Category 3: Databases -->
+    <g transform="translate(0, 144)">
+      <text x="0" y="14" fill="#22c55e" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1">
+        ● DATABASES &amp; STORAGE
+      </text>
+      <g transform="translate(0, 24)">
+        <rect x="0" y="0" width="85" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="42.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">MongoDB</text>
+
+        <rect x="93" y="0" width="70" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="128" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">MySQL</text>
+
+        <rect x="171" y="0" width="70" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="206" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">SQLite</text>
+
+        <rect x="249" y="0" width="60" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="279" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">JSON</text>
+      </g>
+    </g>
+
+    <!-- Category 4: Tools & CS -->
+    <g transform="translate(0, 216)">
+      <text x="0" y="14" fill="#f59e0b" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1">
+        ● DEVELOPER TOOLS &amp; THEORY
+      </text>
+      <g transform="translate(0, 24)">
+        <rect x="0" y="0" width="55" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="27.5" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Git</text>
+
+        <rect x="63" y="0" width="80" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="103" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">Postman</text>
+
+        <rect x="151" y="0" width="90" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="196" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">REST APIs</text>
+
+        <rect x="249" y="0" width="70" height="28" rx="6" fill="#101d31" stroke="#213451" stroke-width="1"/>
+        <text x="284" y="18" text-anchor="middle" fill="#e8f0fb" class="font-mono" font-size="11">DSA Core</text>
+      </g>
+    </g>
+  </g>
+</svg>
